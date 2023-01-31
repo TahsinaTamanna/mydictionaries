@@ -102,6 +102,7 @@ def deal_cards(deck, number):
         print(card)
         hand_value += value
 
+        del deck[card]
     # Display the value of the hand.
 
     print(hand_value)
