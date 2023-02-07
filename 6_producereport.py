@@ -48,11 +48,10 @@ ProduceDictionary = {
 }
 
 
-# print(ProduceDictionary["Kale"]["total"])
-
 for k, v in ProduceDictionary.items():
 
     if round(v["cost"] * v["amt_sold"], 2) != v["total"]:
-        print("\nProduce Name:", k)
-        print("Cost: $", round(v["cost"] * v["amt_sold"], 2))
-        print("Calculated Cost: $", v["total"])
+        print()
+        print("Produce Name:", k)
+        print(f"Cost: ${round(v['cost'] * v['amt_sold'], 2)}")
+        print(f"Calculated Cost: ${v['total']}")
